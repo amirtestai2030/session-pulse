@@ -1,0 +1,57 @@
+{
+  "name": "session-pulse",
+  "version": "0.1.0",
+  "description": "Session Pulse above the prompt box: context window with a /compact nudge, 5-hour and weekly limits, prompt clocks, session, daily and weekly cost, a /pulse command and a chime when a long turn ends.",
+  "author": { "name": "Amir" },
+  "license": "MIT",
+  "keywords": ["mod", "hud", "context-window", "usage-limit", "timer", "cost"],
+  "types": "./types/index.d.ts",
+  "userConfig": {
+    "compactSoftK": {
+      "type": "number",
+      "title": "Compact nudge (K tokens)",
+      "description": "Context size, in thousands of tokens, at which the band suggests /compact (yellow). Capped at 50% of a smaller window.",
+      "default": 300,
+      "min": 20,
+      "max": 2000
+    },
+    "compactHardK": {
+      "type": "number",
+      "title": "Compact urge (K tokens)",
+      "description": "Context size, in thousands of tokens, at which the suggestion turns red. Capped at 70% of a smaller window.",
+      "default": 400,
+      "min": 20,
+      "max": 2000
+    },
+    "warnPercent": {
+      "type": "number",
+      "title": "Yellow from (%)",
+      "description": "Bars turn yellow from this percentage.",
+      "default": 60,
+      "min": 1,
+      "max": 100
+    },
+    "alertPercent": {
+      "type": "number",
+      "title": "Red from (%)",
+      "description": "Bars turn red from this percentage.",
+      "default": 85,
+      "min": 1,
+      "max": 100
+    },
+    "longTurnSeconds": {
+      "type": "number",
+      "title": "Long turn (seconds)",
+      "description": "A prompt that runs at least this long ends with a toast, a notification and the chime.",
+      "default": 120,
+      "min": 5,
+      "max": 7200
+    },
+    "playSound": {
+      "type": "boolean",
+      "title": "Chime on long turn",
+      "description": "Play sounds/done.wav when a long turn ends.",
+      "default": true
+    }
+  }
+}

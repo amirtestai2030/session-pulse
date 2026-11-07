@@ -1,0 +1,18 @@
+{
+  "name": "session-pulse",
+  "owner": { "name": "Amir", "url": "https://github.com/amirtestai2030" },
+  "metadata": {
+    "description": "Session Pulse for Claude Code: context window, 5-hour and weekly limits, prompt clocks and cost above the prompt box.",
+    "version": "0.1.0"
+  },
+  "plugins": [
+    {
+      "name": "session-pulse",
+      "description": "Session Pulse above the prompt box: one thin line by default, cards on a click, a /compact nudge, 5-hour and weekly limits, prompt clocks, session, daily and weekly cost, and a chime when a long turn ends.",
+      "version": "0.1.0",
+      "author": { "name": "Amir" },
+      "source": "./",
+      "category": "productivity"
+    }
+  ]
+}

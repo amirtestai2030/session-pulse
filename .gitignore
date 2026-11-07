@@ -1,0 +1,7 @@
+# Engine-written and local files
+.claude-plugin/types/
+.mcpb-cache/
+*.log
+Thumbs.db
+desktop.ini
+.DS_Store
